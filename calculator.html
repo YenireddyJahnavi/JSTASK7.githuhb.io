@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+<body>
+    <form>
+        <label for="1st number">1st Number:</label><br>
+        <input type="text" id="fn" name ="1st Number"><br><br>
+        <label for="2nd number">2nd Number:</label><br>
+        <input type="text" id="sn" name ="2nd Number"><br><br>
+
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    
+    <p>The Result is : <br>
+        <span id = "result"></span>
+    </p>
+
+    <script type="text/javascript">
+
+     function multiplyBy()
+     {
+        num1 = document.getElementById("fn").value;
+        num2 = document.getElementById("sn").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+    function divideBy() 
+    { 
+        num1 = document.getElementById("fn").value;
+        num2 = document.getElementById("sn").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+    } 
+</script>
+</body>
+</html>
